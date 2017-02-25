@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Call Timer</string>
+    <string name="title_call_length_mins">Minutes</string>
+    <string name="title_call_length_secs">Seconds</string>
+    <string name="DEFAULT_CALL_LENGTH_MINS">9</string>
+    <string name="DEFAULT_CALL_LENGTH_SECS">30</string>
+    <string name="title_enable_timer">Timer</string>
+    <string name="summary_enable_timer">Enables or disables timer.</string>
+    <string name="timer_settings">Timer Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="title_seconds_before_end">Seconds Before Hang-up</string>
+    <string name="DEFAULT_SECONDS_BEFORE_END">10</string>
+    <string name="title_mins_to_extend">Extend Button Minutes</string>
+    <string name="DEFAULT_EXTEND_MINS">1</string>
+</resources>

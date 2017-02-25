@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/timer_settings">
+        <SwitchPreference
+            android:key="PREF_ENABLE_TIMER"
+            android:summary="@string/summary_enable_timer"
+            android:title="@string/title_enable_timer"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:key="PREF_CALL_LENGTH_MINS"
+            android:title="@string/title_call_length_mins"
+            android:entryValues="@array/call_length_mins"
+            android:entries="@array/call_length_mins"
+            android:defaultValue="@string/DEFAULT_CALL_LENGTH_MINS"
+            android:dependency="PREF_ENABLE_TIMER"/>
+
+        <ListPreference
+            android:key="PREF_CALL_LENGTH_SECS"
+            android:title="@string/title_call_length_secs"
+            android:entryValues="@array/call_length_secs"
+            android:entries="@array/call_length_secs"
+            android:defaultValue="@string/DEFAULT_CALL_LENGTH_SECS"
+            android:dependency="PREF_ENABLE_TIMER"/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/notification_settings">
+        <ListPreference
+            android:key="PREF_SECS_BEFORE_END"
+            android:title="@string/title_seconds_before_end"
+            android:entryValues="@array/call_length_secs"
+            android:entries="@array/call_length_secs"
+            android:defaultValue="@string/DEFAULT_SECONDS_BEFORE_END"
+            android:dependency="PREF_ENABLE_TIMER"/>
+        <ListPreference
+            android:key="PREF_EXTEND_MINS"
+            android:title="@string/title_mins_to_extend"
+            android:entryValues="@array/call_extend_mins"
+            android:entries="@array/call_extend_mins"
+            android:defaultValue="@string/DEFAULT_EXTEND_MINS"
+            android:dependency="PREF_ENABLE_TIMER"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
